@@ -1,0 +1,80 @@
+.header__inner {
+  text-align: center;
+  padding: 30px 15px;
+  max-width: 1230px;
+}
+
+.header__logo {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none
+}
+
+main{
+  margin: 0 10% 10%;
+}
+
+.form {
+  max-width: 1230px;
+}
+
+.form__group {
+  display: flex;
+  text-align: center;
+}
+
+.form__label--required {
+  padding: 4px 6px;
+  border-radius: 3px;
+  color: red;
+}
+
+.form__example{
+  color: #aaaa;
+  text-align: left;
+}
+
+.form__error {
+  height: 20px;
+  color: #ff0000;
+  text-align: left;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.form__input--text input {
+  height: 30px;
+}
+
+.form__input--textarea textarea {
+  height: 180px;
+}
+
+.form__button {
+  margin-top: 10px;
+  position: relative;
+}
+
+.form__button-submit {
+  padding: 10px;
+  width: 30%;
+  height: 50px;
+  border: none;
+  border-radius: 3px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translateY (-50%) translateX (-50%)
+}
