@@ -17,10 +17,10 @@ class CreateContactsTable extends Migration
             $table->id();
             $table->string('family-name')->nullable(false);
             $table->string('given-name')->nullable(false);
-            $table->tinyInteger('gender')->nullable(false);
+            $table->unsignedTinyInteger('gender')->nullable();
             $table->string('email')->nullable(false);
             $table->char('postcode')->nullable(false);
-            $table->string('address')->nullable(false);
+            $table->string('address')->nullable();
             $table->string('building_name');
             $table->text('opinion', 120)->nullable(false);
             $table->timestamps();
