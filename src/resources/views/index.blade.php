@@ -20,7 +20,8 @@
 
   <main>
     <div>
-       <form class="form">
+       <form class="form" action="/contacts/confirm" method="post">
+        @csrf
          <div class="form__group">
            <div class="form__group-title">
              <span class="form__label--item">お名前</span>
@@ -50,8 +51,8 @@
              <span class="form__label--item">性別</span>
              <span class="form__label--required">※</span>
            </div>
-           <label for="r_male">男性 <input id="r_male" type="radio" name="gender" value="男性"></label>
-           <label for="r_female">女性 <input id="r_female" type="radio" name="gender" value="女性"></label>
+           <input type="radio" name="gender" id="1" value="1" checked><label>男性</label>
+           <input type="radio" name="gender" id="2" value="2"><label>女性</label>
              <div class="form__error">
                <!--バリデーション機能を実装したら記述します。-->
              </div>
@@ -80,7 +81,7 @@
            <p>〒</p>
            <div class="form__group-content">
              <div class="form__input--text">
-               <input type="text" name="post"/>
+               <input type="text" name="postcode"/>
                <p class="form__example">例）123-4567</p>
              </div>
              <div class="form__error">
@@ -109,7 +110,7 @@
            </div>
            <div class="form__group-content">
              <div class="form__input--text">
-               <input type="text" name="address"/>
+               <input type="text" name="building_name"/>
                <p class="form__example">例）千駄ヶ谷マンション101</p>
              </div>
            </div>
@@ -121,7 +122,7 @@
            </div>
            <div class="form__group-content">
              <div class="form__input--textarea">
-               <textarea name="content"></textarea>
+               <textarea name="opinion"></textarea>
              </div>
            </div>
          </div>
