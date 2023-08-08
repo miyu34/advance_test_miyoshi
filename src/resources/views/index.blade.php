@@ -29,19 +29,23 @@
            </div>
            <div class="form__group-content">
              <div class="form__input--text">
-               <input type="text" name="family-name"/>
+               <input type="text" name="family-name" value="{{ old('family-name') }}" />
                <p class="form__example">例）山田</p>
              </div>
              <div class="form__error">
-               <!--バリデーション機能を実装したら記述します。-->
+               @error('family-name')
+               {{ $message }}
+               @enderror
              </div>
            </div>
              <div class="form__input--text">
-               <input type="text" name="given-name" />
+               <input type="text" name="given-name" value="{{ old('given-name') }}" />
                <p class="form__example">例）太郎</p>
              </div>
              <div class="form__error">
-               <!--バリデーション機能を実装したら記述します。-->
+               @error('given-name')
+               {{ $message }}
+               @enderror
              </div>
              </div>
 
@@ -54,7 +58,9 @@
            <input type="radio" name="gender" id="1" value="1" checked><label>男性</label>
            <input type="radio" name="gender" id="2" value="2"><label>女性</label>
              <div class="form__error">
-               <!--バリデーション機能を実装したら記述します。-->
+               @error('gender')
+               {{ $message }}
+               @enderror
              </div>
            </div>
          </div>
@@ -65,11 +71,13 @@
            </div>
            <div class="form__group-content">
              <div class="form__input--text">
-               <input type="email" name="email"/>
+               <input type="email" name="email" value="{{ old('email') }}" />
                <p class="form__example">例）test@example.com</p>
              </div>
              <div class="form__error">
-               <!--バリデーション機能を実装したら記述します。-->
+              @error('email')
+              {{ $message }}
+              @enderror
              </div>
            </div>
          </div>
@@ -81,11 +89,13 @@
            <p>〒</p>
            <div class="form__group-content">
              <div class="form__input--text">
-               <input type="text" name="postcode"/>
+               <input type="text" name="postcode" value="{{ old('postcode') }}" />
                <p class="form__example">例）123-4567</p>
              </div>
              <div class="form__error">
-               <!--バリデーション機能を実装したら記述します。-->
+              @error('postcode')
+              {{ $message }}
+              @enderror
              </div>
            </div>
          </div>
@@ -96,11 +106,13 @@
            </div>
            <div class="form__group-content">
              <div class="form__input--text">
-               <input type="text" name="address"/>
+               <input type="text" name="address" value="{{ old('address') }}" />
                <p class="form__example">例）東京都渋谷区千駄ヶ谷1-2-3</p>
              </div>
              <div class="form__error">
-               <!--バリデーション機能を実装したら記述します。-->
+              @error('address')
+              {{ $message }}
+              @enderror
              </div>
            </div>
          </div>
@@ -110,7 +122,7 @@
            </div>
            <div class="form__group-content">
              <div class="form__input--text">
-               <input type="text" name="building_name"/>
+               <input type="text" name="building_name" value="{{ old('building_name') }}" />
                <p class="form__example">例）千駄ヶ谷マンション101</p>
              </div>
            </div>
@@ -122,8 +134,13 @@
            </div>
            <div class="form__group-content">
              <div class="form__input--textarea">
-               <textarea name="opinion"></textarea>
+               <textarea name="opinion" value="{{ old('opinion') }}" ></textarea>
              </div>
+               <div class="form__error">
+                @error('name')
+                {{ $message }}
+                @enderror
+              </div>             
            </div>
          </div>
          <div class="form__button">
