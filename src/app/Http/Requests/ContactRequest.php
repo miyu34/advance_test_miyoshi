@@ -28,7 +28,8 @@ class ContactRequest extends FormRequest
             'given-name' => ['required', 'string', 'max:255'],
             'gender' => ['required'],
             'email' => ['required', 'string', 'email', 'max:255'],
-            'postcode' => ['required', 'numeric', 'max:8'],
+            'postcode' => ['required', 'string', 'max:8'],
+ // 数値指定の場合はnumeric、今回はハイフンが必要→バリデーションの方法が判明すればnumericも使用可能？
             'address' => ['required', 'string', 'max:255'],
             'building_name' => ['string', 'max:255'],
             'opinion' => ['required', 'string', 'max:120'],
@@ -41,7 +42,7 @@ class ContactRequest extends FormRequest
         return [
             'family-name.required' => '名前を入力してください',
             'family-name.string' => '名前を文字列で入力してください',
-            'famiry-name.max' => '名前を255文字以下で入力してください',
+            'family-name.max' => '名前を255文字以下で入力してください',
             'given-name.required' => '名前を入力してください',
             'given-name.string' => '名前を文字列で入力してください',
             'given-name.max' => '名前を255文字以下で入力してください',

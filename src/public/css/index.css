@@ -26,6 +26,10 @@ main{
   text-align: center;
 }
 
+.form__group-title{
+  width: 70%;
+}
+
 .form__label--required {
   padding: 4px 6px;
   border-radius: 3px;
@@ -48,7 +52,11 @@ main{
   width: 300px;
   border: 1px solid #ddd;
   border-radius: 10px;
-  text-align: center;
+  text-align: left;
+}
+
+.form__input--text{
+  text-align: justify;
 }
 
 .form__input--text input {
