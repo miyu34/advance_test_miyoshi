@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="{{ asset('css/index.css') }}" rel="stylesheet">
-  <title>Contact Form</title>
+   <title>Contact Form</title>
 </head>
 
 <body>
@@ -54,8 +54,8 @@
              <span class="form__label--item">性別</span>
              <span class="form__label--required">※</span>
            </div>
-           <input type="radio" name="gender" id="1" value="1" checked><label>男性</label>
-           <input type="radio" name="gender" id="2" value="2"><label>女性</label>
+           <input class=form__group-content-gender type="radio" name="gender" id="1" value="1" checked><label>男性</label>
+           <input class=form__group-content-gender  type="radio" name="gender" id="2" value="2"><label>女性</label>
              <div class="form__error">
                @error('gender')
                {{ $message }}
@@ -63,6 +63,7 @@
              </div>
            </div>
          </div>
+         <br>
          <div class="form__group">
            <div class="form__group-title">
              <span class="form__label--item">メールアドレス</span>

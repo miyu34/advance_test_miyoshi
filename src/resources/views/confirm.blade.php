@@ -14,7 +14,7 @@
   <header class="header">
     <div class="header__inner">
       <a class="header__logo" href="/">
-        Contact Form
+        内容確認
       </a>
     </div>
   </header>
@@ -22,7 +22,6 @@
   <main>
     <div class="confirm__content">
       <div class="confirm__heading">
-        <h2>内容確認</h2>
       </div>
       <form class="form" action="/contacts" method="post">
         @csrf
@@ -87,7 +86,8 @@
         </div>
         <div class="form__button">
           <button class="form__button-submit" type="submit">送信</button>
-          <button class="form__button-submit" type="submit">修正する</button>
+          <br>
+          <button class="form__button-fix" type="submit">修正する</button>
         </div>
       </form>
     </div>

@@ -1,33 +1,33 @@
-.header__inner {
-  text-align: center;
-  padding: 30px 15px;
+header__inner {
   max-width: 1230px;
 }
 
 .header__logo {
   margin-bottom: 40px;
-  text-align: center;
-  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 30px;
   font-weight: bold;
   color: #000;
   text-decoration: none
 }
 
-main{
+main {
   margin: 0 10% 10%;
 }
 
 .form {
   max-width: 1230px;
+  margin: 0 auto;
+  padding: 10px 0;
 }
 
 .form__group {
   display: flex;
   text-align: center;
-}
-
-.form__group-title{
-  width: 70%;
 }
 
 .form__label--required {
@@ -36,7 +36,7 @@ main{
   color: red;
 }
 
-.form__example{
+.form__example {
   color: #aaaa;
   text-align: left;
 }
@@ -47,16 +47,28 @@ main{
   text-align: left;
 }
 
+.form__label--item{
+  text-align: left;
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+}
+
+.form__group-content-gender{
+  width: 20%;
+  text-align: center;
+}
+
+.form__group-content{
+  text-align: center;
+}
+
 .form__input--text input,
 .form__input--textarea textarea {
-  width: 300px;
+  width: 400px;
   border: 1px solid #ddd;
   border-radius: 10px;
   text-align: left;
-}
-
-.form__input--text{
-  text-align: justify;
 }
 
 .form__input--text input {
