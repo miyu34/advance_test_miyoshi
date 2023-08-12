@@ -11,10 +11,7 @@ http://localhost/
 お問い合わせ内容登録 / 問い合わせ内容確認 / 探索機能(今回間に合わなかったです。) 
  
 # 使用技術
-Laravel Framework 8.83.27
-Git Hub
-HTML
-css
+Laravel Framework 8.83.27 / Git Hub / HTML / css
  
 # テーブル設計
  
